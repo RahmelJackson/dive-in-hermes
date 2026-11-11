@@ -1,0 +1,7 @@
+{
+  "name": "signal-atlas",
+  "label": "Dive In",
+  "description": "Gateway routes for Dive In's visual evidence workspace.",
+  "api": "plugin_api.py",
+  "hidden": true
+}

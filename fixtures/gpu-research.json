@@ -1,0 +1,314 @@
+{
+  "source_url": "https://x.com/rahmelsjackson/status/2119888700272177371",
+  "checked": "2026-11-10",
+  "sources": [
+    {
+      "key": "post",
+      "url": "https://x.com/rahmelsjackson/status/2119888700272177371",
+      "title": "@rahmelsjackson — older GPUs versus consoles",
+      "profile_image": "gpu-post-profile.jpg",
+      "post_excerpt": "… Even the \"older GPUs\" are significantly more powerful than the consoles they're defending",
+      "text": "The author argues that older PC GPUs can outperform consoles and criticizes using the RTX 5090 as the reference point. Observed in the public thread through the browser."
+    },
+    {
+      "key": "reply",
+      "url": "https://x.com/Eldonchorizo_/status/2119886433704157413",
+      "title": "@Eldonchorizo_ — Steam ownership claim",
+      "profile_image": "gpu-reply-profile.jpg",
+      "post_excerpt": "Steam did a GPU check and only 1% own 5090’s lol the majority are rocking 10 year old GPUs. 😭",
+      "text": "The quoted post claims about 1% own a 5090 and that most Steam users have ten-year-old GPUs. Observed as a quoted post within the public thread."
+    },
+    {
+      "key": "toasty",
+      "url": "https://x.com/GlassJoeTM/status/2119961976294252562",
+      "title": "@GlassJoeTM — flagship audience",
+      "profile_image": "gpu-toasty-profile.jpg",
+      "post_excerpt": "… the 5090 is not a GPU marketed towards the average gamer.",
+      "text": "A visible reply argues that the 5090 targets wealthy enthusiasts and AI users rather than average gamers."
+    },
+    {
+      "key": "steam",
+      "url": "https://store.steampowered.com/hwsurvey/videocard/",
+      "title": "Valve — October 2026 video card survey",
+      "text": "October 2026 all-video-card shares: desktop RTX 5090 0.43%; RTX 3060 3.78%; RTX 4060 3.51%; GTX 1650 2.44%; GTX 1060 1.54%. These are survey shares, not benchmark scores or a census of all gamers."
+    },
+    {
+      "key": "nvidia",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+      "title": "NVIDIA — RTX 5090 specifications",
+      "text": "NVIDIA lists 32 GB GDDR7 and 575 W total graphics power for the reference RTX 5090. NVIDIA describes it as its most powerful GeForce GPU."
+    },
+    {
+      "key": "switch",
+      "url": "https://www.nintendo.com/us/gaming-systems/switch-2/tech-specs/",
+      "title": "Nintendo — Switch 2 technical specifications",
+      "text": "Nintendo lists a custom NVIDIA processor. TV output supports up to 3840x2160 at 60 fps and 120 fps at 1080p or 1440p. Handheld display resolution is 1920x1080. These output specifications do not establish performance in a particular game."
+    },
+    {
+      "key": "rtx3060",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-geforce-rtx-3060-next-generation-of-the-worlds-most-popular-gpu",
+      "title": "NVIDIA — January 2021 RTX 3060 announcement",
+      "text": "NVIDIA announced RTX 3060 availability for late February 2021. The announcement identifies the GTX 1060 as introduced in 2016."
+    }
+  ],
+  "dossier": {
+    "title": "PC GPUs versus Switch 2 — checking the argument",
+    "research_topic": "PC GPU and console performance",
+    "summary": "Three different claims are mixed together: graphics performance, GPU ownership, and purchase cost. The ownership claim can be checked now. A universal older-PC-versus-console performance verdict needs named hardware and measured games. Research checked November 10, 2026.",
+    "learning_path": [
+      {
+        "focus": "story",
+        "question": "Can an older PC beat the Switch 2?",
+        "answer": "The thread leaves that question open. It argues about what older graphics cards can do, then shifts to how many people own a new flagship.",
+        "why_it_matters": "Start with the performance question you came to answer. The three captured posts show how the discussion moved from speed to ownership and the cost of a PC.",
+        "evidence_ids": ["post", "reply", "toasty"]
+      },
+      {
+        "focus": "perspectives",
+        "question": "Why are they talking past each other?",
+        "answer": "One person asks what older hardware can run. Others are arguing about how common an expensive flagship is and who would buy it.",
+        "why_it_matters": "Each question calls for a different kind of evidence. A rare flagship can tell us about the top end of PC hardware. The choice of a comparable older PC still needs to be justified.",
+        "concepts": [
+          {"label": "Speed", "explanation": "How a named system runs a game. Look for measured frame rates, frame times, and comparable image quality."},
+          {"label": "Popularity", "explanation": "How common a device is in the group surveyed. Look for the survey period and which devices were counted."},
+          {"label": "Price", "explanation": "What it costs to buy the setup. Compare complete systems at dated prices in the same region."}
+        ],
+        "evidence_ids": ["post", "reply", "toasty"]
+      },
+      {
+        "focus": "measurements",
+        "question": "What does the Steam survey establish?",
+        "answer": "Valve's saved October 2026 snapshot lists the desktop RTX 5090 at 0.43%, compared with about 1% claimed in the reply. The flagship was uncommon among survey participants.",
+        "why_it_matters": "The survey helps choose common hardware for a comparison. Whether any of it runs a game faster requires a different measurement.",
+        "concepts": [
+          {"label": "Hardware survey", "explanation": "A snapshot of hardware reported by participating Steam users. The chart shows shares for selected desktop GPU models."},
+          {"label": "A fair reference", "explanation": "The RTX 5090 can set a high-end reference point. The RTX 3060, GTX 1650 and GTX 1060 are older candidates for a separate performance test."}
+        ],
+        "evidence_ids": ["steam", "reply"]
+      },
+      {
+        "focus": "comparison",
+        "question": "What would settle the performance question?",
+        "answer": "Run the same games on Switch 2 and named PCs with a GTX 1060, GTX 1650 or RTX 3060. Record the game version, scene, settings and whether the console is docked.",
+        "why_it_matters": "The published specs show what the devices can output. Testing the same scene at comparable image quality is what lets us judge speed.",
+        "concepts": [
+          {"label": "Frame rate", "explanation": "How many images a system draws per second. Frame times add information about how steadily those images arrive."},
+          {"label": "Matching conditions", "explanation": "Use the same scenes, document graphics settings and reconstruction, and compare image quality alongside speed."}
+        ],
+        "evidence_ids": ["post", "switch", "nvidia", "rtx3060", "steam"]
+      },
+      {
+        "focus": "synthesis",
+        "question": "What should I take away?",
+        "answer": "Popularity, performance and price answer different questions. The saved survey establishes low 5090 adoption. The comparison that started the thread still needs measured game results.",
+        "why_it_matters": "If you find a matched test, check it against the original performance claim. A fair cost comparison also needs dated prices for the complete PC and console setups.",
+        "evidence_ids": ["steam", "post", "switch"]
+      }
+    ],
+    "participants": [
+      {
+        "handle": "@rahmelsjackson",
+        "profile_url": "https://x.com/rahmelsjackson",
+        "position": "Argues that older GPUs outperform consoles and objects to comparisons centered on the RTX 5090.",
+        "role_in_story": {
+          "summary": "The submitted post shifts the comparison from who owns the latest GPU to what older hardware can run. It gives the story a benchmark question and leaves the exact GPU models, games, and settings open.",
+          "evidence_ids": ["post"]
+        },
+        "history": []
+      },
+      {
+        "handle": "@Eldonchorizo_",
+        "profile_url": "https://x.com/Eldonchorizo_",
+        "position": "Uses GPU ownership and system cost to challenge the comparison.",
+        "role_in_story": {
+          "summary": "The quoted reply sets up two ownership claims. The survey snapshot can check the RTX 5090 share. The claim that most GPUs are ten years old needs a release year for every model in the survey.",
+          "evidence_ids": ["reply", "steam"]
+        },
+        "history": []
+      },
+      {
+        "handle": "@GlassJoeTM",
+        "profile_url": "https://x.com/GlassJoeTM",
+        "position": "Argues that the RTX 5090 targets a specialized, expensive market.",
+        "role_in_story": {
+          "summary": "This reply questions whether an enthusiast flagship is a fair stand-in for a typical gaming PC. That matters when choosing the hardware to compare. The reply leaves game performance on older GPUs and Switch 2 open.",
+          "evidence_ids": ["toasty"]
+        },
+        "history": []
+      }
+    ],
+    "posts": [
+      {
+        "author": "@Eldonchorizo_",
+        "relationship": "Quoted by the original post; replying to @rahmelsjackson and @DJK1NG_Gaming",
+        "summary": "Claims approximately 1% own a 5090 and most users have ten-year-old GPUs.",
+        "evidence_ids": [
+          "reply"
+        ]
+      },
+      {
+        "author": "@rahmelsjackson",
+        "relationship": "Original post responding to the quoted ownership claim",
+        "summary": "Argues that older GPUs can still be substantially faster than the consoles being defended.",
+        "evidence_ids": [
+          "post"
+        ]
+      },
+      {
+        "author": "@GlassJoeTM",
+        "relationship": "Visible reply to the original post",
+        "summary": "Says the 5090 is a flagship for affluent enthusiasts and AI workloads.",
+        "evidence_ids": [
+          "toasty"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "claim": "Few Steam users own an RTX 5090; the post says 1%.",
+        "claim_id": "rtx-5090-survey-share",
+        "attribution": "stated",
+        "speaker": "@Eldonchorizo_",
+        "verdict": "partly supported",
+        "reason": "Valve's October 2026 all-video-card table puts the desktop RTX 5090 at 0.43%. Low adoption is supported. The precise 1% figure is inaccurate for this snapshot. Laptop GPUs are listed separately.",
+        "evidence": [
+          {"evidence_id": "reply", "role": "statement", "note": "The quoted reply puts ownership at about 1%."},
+          {"evidence_id": "steam", "role": "supports", "note": "The survey snapshot shows low adoption for the desktop RTX 5090."},
+          {"evidence_id": "steam", "role": "challenges", "note": "The October snapshot gives 0.43%, which differs from the figure quoted in the reply."}
+        ],
+        "evidence_ids": [
+          "reply",
+          "steam"
+        ]
+      },
+      {
+        "claim": "Most Steam users have ten-year-old GPUs.",
+        "claim_id": "steam-gpu-age-majority",
+        "attribution": "stated",
+        "speaker": "@Eldonchorizo_",
+        "verdict": "unresolved",
+        "reason": "The post supplies no age aggregation. A 2016 GTX 1060 has 1.54% share; the 2021 RTX 3060 has 3.78%. Neither establishes a majority. A defensible verdict needs all models mapped to release dates, with unknowns explicitly counted.",
+        "evidence": [
+          {"evidence_id": "reply", "role": "statement", "note": "The reply claims a majority without giving a breakdown by age."},
+          {"evidence_id": "steam", "role": "context", "note": "Valve reports the share of individual models. The saved figures cover a subset."},
+          {"evidence_id": "rtx3060", "role": "context", "note": "The announcement dates two GPU generations, which is insufficient to calculate the overall age distribution."}
+        ],
+        "evidence_ids": [
+          "reply",
+          "steam",
+          "rtx3060"
+        ]
+      },
+      {
+        "claim": "The RTX 5090 is representative of ordinary PC hardware.",
+        "claim_id": "rtx-5090-typical-pc",
+        "attribution": "inferred",
+        "speaker": "Comparison implied by the exchange",
+        "verdict": "contradicted",
+        "reason": "As a population baseline it is poorly representative: 0.43% survey share, flagship positioning, 32 GB graphics memory, and 575 W graphics power. It can still be a valid upper-end comparison if labeled that way.",
+        "evidence": [
+          {"evidence_id": "steam", "role": "challenges", "note": "The model accounts for 0.43% of the saved survey snapshot."},
+          {"evidence_id": "nvidia", "role": "context", "note": "NVIDIA's specifications describe a flagship configuration."}
+        ],
+        "evidence_ids": [
+          "steam",
+          "nvidia"
+        ]
+      },
+      {
+        "claim": "Older GPUs are significantly more powerful than the consoles being defended.",
+        "claim_id": "older-pc-vs-switch-2-performance",
+        "attribution": "stated",
+        "speaker": "@rahmelsjackson",
+        "verdict": "unresolved",
+        "reason": "The claim lacks named GPU models, consoles, game versions, settings and docked/handheld mode. Manufacturer output limits cannot settle it. GTX 1060, GTX 1650 and RTX 3060 are concrete candidates for measured comparisons, not established equivalents.",
+        "evidence": [
+          {"evidence_id": "post", "role": "statement", "note": "The original post claims a performance advantage for older GPUs."},
+          {"evidence_id": "steam", "role": "context", "note": "The survey helps choose common comparison GPUs. It measures adoption."},
+          {"evidence_id": "switch", "role": "context", "note": "Nintendo lists hardware and output modes. Matched game benchmarks are still needed."}
+        ],
+        "evidence_ids": [
+          "post",
+          "steam",
+          "switch"
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "title": "GPU adoption in Valve's survey",
+        "unit": "%",
+        "period": "October 2026 · all video cards",
+        "caveat": "Selected desktop models only. Bars show usage share, not speed. Other models are omitted; these values do not sum to 100%.",
+        "reference": {"label": "RTX 5090 share claimed in the reply", "value": 1},
+        "values": [
+          {
+            "label": "RTX 3060",
+            "value": 3.78
+          },
+          {
+            "label": "RTX 4060",
+            "value": 3.51
+          },
+          {
+            "label": "GTX 1650",
+            "value": 2.44
+          },
+          {
+            "label": "GTX 1060",
+            "value": 1.54
+          },
+          {
+            "label": "RTX 5090",
+            "value": 0.43
+          }
+        ],
+        "evidence_ids": [
+          "steam",
+          "reply"
+        ]
+      }
+    ],
+    "comparisons": [
+      {
+        "title": "What the published specifications establish",
+        "columns": [
+          "Hardware",
+          "Verified facts",
+          "What remains unmeasured"
+        ],
+        "rows": [
+          [
+            "Switch 2",
+            "Custom NVIDIA processor; 1080p handheld display; TV output up to 4K/60 or 1080p–1440p/120",
+            "Frame rate and image quality in each game; exact equivalent PC"
+          ],
+          [
+            "RTX 5090 reference GPU",
+            "32 GB GDDR7; 575 W total graphics power",
+            "Whole-PC power and matched game results against Switch 2"
+          ],
+          [
+            "RTX 3060 / GTX 1060",
+            "Introduced in 2021 / 2016",
+            "Equivalent whole-PC configurations and current matched benchmarks"
+          ]
+        ],
+        "evidence_ids": [
+          "switch",
+          "nvidia",
+          "rtx3060"
+        ]
+      }
+    ],
+    "gaps": [
+      "No matched Switch 2 versus desktop-GPU benchmark has been verified in this investigation.",
+      "Public topic histories have not been collected. Use a participant's button to investigate examples.",
+      "The visible thread sample is partial. Reply counts do not imply that every reply was read."
+    ],
+    "opportunities": [
+      "Test the claim with named systems: Switch 2 docked and handheld versus PCs with GTX 1060, GTX 1650 and RTX 3060. Record CPU, game version, resolution, reconstruction settings, average FPS and frame times.",
+      "Audit the ten-year-old-GPU claim by joining Valve's complete model list to dated manufacturer launch records and publishing the unknown share."
+    ]
+  }
+}

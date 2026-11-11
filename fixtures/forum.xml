@@ -1,0 +1,9 @@
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Example Public Forum</title>
+<entry><id>tenant-question</id><title>Tenant asks about overnight heat</title>
+<link href="https://forum.example/overnight"/><published>2026-10-07T19:15:00-04:00</published>
+<summary>Will cool roofs lower overnight temperatures for top-floor renters? The tenants should see indoor readings before deciding.</summary></entry>
+<entry><id>cost-question</id><title>Maintenance costs</title>
+<link href="https://forum.example/costs"/><updated>2026-10-07T15:00:00</updated>
+<summary>Who pays for recoating after the pilot?</summary></entry>
+</feed>
+
