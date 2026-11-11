@@ -975,7 +975,7 @@ function renderDataCloud(report, notes) {
  }
  function frameScene(){
   const panel=!detail.hidden?detail.getBoundingClientRect():null;
-  const top=hud.getBoundingClientRect().bottom;
+  const top=hud.getBoundingClientRect().bottom+8;
   const footerBox=footer.getBoundingClientRect();
   const bottom=Math.min(window.innerHeight,footerBox.top);
   const bounds=stage.getBoundingClientRect();

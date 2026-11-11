@@ -1,6 +1,6 @@
 name: signal-atlas
-version: "0.26.0"
-description: Dive In turns public sources into visual, source-linked investigations backed by SQLite.
+version: "0.26.1"
+description: Turn a public link into a visual investigation with source-linked claims, charts, and follow-ups.
 requires_hermes: ">=0.21.6"
 provides_tools:
   - signal_atlas_studio_action

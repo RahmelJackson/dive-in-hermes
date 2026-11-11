@@ -6,13 +6,13 @@ survey snapshot and the source links used in the original investigation.
 
 | Time | Show and say |
 | --- | --- |
-| 0–5 s | “Meet Dive In, a visual investigation workspace for Hermes.” |
-| 5–14 s | Open the GPU story. “Start with a public link or an excerpt. This example follows a discussion about PC graphics and the Switch 2.” |
-| 14–25 s | Open the perspectives layer. “The conversation mixes performance, ownership, and cost. Dive In separates those into questions you can investigate.” |
-| 25–38 s | Open the measurements layer and select the RTX 5090. “The reply says 1%. The saved Steam survey shows 0.43%. Select the value to see the data and its source.” |
-| 38–50 s | Open Big picture and select Sources. “Preview the layers, jump to a bubble, or trace a finding back to its source.” |
-| 50–61 s | Choose **Find a fair head-to-head test**. “The performance question still needs matched games and settings. This suggested question can continue the investigation in Hermes.” |
-| 61–67 s | “Dive In keeps the story, the evidence, and the next question together.” |
+| 0–6 s | **The question.** “Can an older gaming PC beat a Switch 2? This thread argues about three different things.” |
+| 6–16 s | **The exchange.** Open the GPU story and follow the submitted post, quoted post, and reply. |
+| 16–27 s | **The disagreement.** Move to perspectives and separate performance, ownership, and cost. |
+| 27–42 s | **The fact-check.** Select the RTX 5090 bar. The reply says 1% and the saved Steam survey shows 0.43%. |
+| 42–54 s | **The source map.** Open Big Picture, select Sources, and show how each layer leads back to the evidence. |
+| 54–66 s | **The next question.** Open the performance comparison, then ask whether a directly comparable test exists. |
+| 66–73 s | **Hermes Desktop.** Show where Dive In opens from the sidebar. |
 
 ## Alternate offline evidence-ledger demo
 

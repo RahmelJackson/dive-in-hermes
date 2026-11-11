@@ -1,9 +1,11 @@
 # Dive In for Hermes Agent
 
-Dive In turns a public source into a visual investigation. Follow the original
-exchange, compare claims against measured data, inspect the source trail, and
-explore the whole story in Big picture. Signal Atlas is the SQLite evidence
-ledger and agent toolset underneath the workspace.
+Dive In turns a public link into an interactive, source-linked investigation
+inside Hermes Desktop. Follow who said what, compare competing claims against
+the evidence, and see where the story is still unresolved. Open an evidence
+bubble for the original source, compare measurements in a chart, or use Big
+Picture to see the whole argument. Ask a follow-up in Hermes and keep the
+answer with the investigation.
 
 ## Install in Hermes Desktop
 
@@ -22,6 +24,20 @@ profile's model and enabled tools. **Open research chat** opens its transcript
 for progress, approvals, and questions. The chat saves findings through
 `signal_atlas_studio_action`, and Dive In reads the same profile's evidence
 ledger. If a source is unavailable, attach an excerpt or transcript.
+
+### First launch and recovery
+
+- If the sidebar entry is missing, open **Capabilities → Plugins** and turn
+  on the **Desktop** switch for Dive In.
+- If the panel cannot load, check that the **Agent** switch is enabled for
+  the profile you are using. Restart the gateway and choose **Retry**.
+- The saved GPU story works without a model. To investigate a new link or ask
+  a follow-up, configure a model provider in Hermes. If a run stops, use
+  **Open research chat** to check the transcript and any approval request.
+- If Hermes cannot find the evidence tool, check that the **Signal Atlas**
+  toolset is enabled in **Capabilities → Tools** for the active profile.
+- If the original page is unavailable, attach an excerpt or transcript with
+  its URL. Dive In preserves the capture and its provenance in the story.
 
 The visual workspace is served through Hermes's profile-scoped plugin API
 and mounted in the Desktop SDK's sandboxed frame. The responsive browser

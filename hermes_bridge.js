@@ -30,7 +30,7 @@ async function api(action,params={}) {
  return result;
 }
 function useLiveWorkspace(){demoWorkspace=false;}
-async function askModel(prompt){await requestHermes('research',{prompt});}
+async function askModel(prompt,runId){await requestHermes('research',{prompt,runId});}
 document.addEventListener('click',event=>{
  const anchor=event.target.closest('a[href]');
  if(!anchor||!/^https?:\/\//i.test(anchor.href))return;

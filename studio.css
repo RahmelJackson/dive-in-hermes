@@ -307,6 +307,8 @@ main[data-view=story]:has(.journey) .source-panel { display: none; }
 }
 .journey-point.is-nearby { filter: blur(.35px); }
 .journey-point.is-nearby:hover { opacity: .9; filter: none; }
+.journey-point.is-nearby:not(:hover) > :is(strong, .journey-point-label, small) { visibility: hidden; }
+.is-measuring .journey-point.is-nearby > :is(strong, .journey-point-label, small) { visibility: hidden; }
 .journey-evidence-orb::before { border: 1px solid color-mix(in srgb,var(--teal) 65%,transparent); }
 .journey-evidence-orb strong { color: var(--teal); }
 .journey-point strong { font-variant-numeric: tabular-nums; font-size: clamp(13px,1.8vw,19px); line-height: 1.06; }

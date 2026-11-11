@@ -217,6 +217,12 @@ function mountGlassScene(canvas) {
    return {x:centerX+(x*cos-z*sin)*focal/distance,
     y:centerY+(forward*pitchCos-lift*pitchSin)*focal/distance,scale:focal/distance,distance};
   }
+  function keepInStory(point,horizontal,vertical,below=vertical){
+   const span=storyFrame?.span??{left:0,width};
+   const limit=(value,min,max)=>max<min?(min+max)/2:Math.max(min,Math.min(max,value));
+   point.x=limit(point.x,span.left+horizontal,span.left+span.width-horizontal);
+   point.y=limit(point.y,storyFrame.top+vertical,storyFrame.bottom-below);
+  }
   function defocus(point){
    // Near bubbles bloom quickly, while distant objects soften into smaller bokeh.
    const difference=Math.abs(point.distance-focusDistance);
@@ -445,6 +451,10 @@ function mountGlassScene(canvas) {
        point.y+=(dockPosition.y-point.y)*dockBlend;
        radius+=(dockPosition.radius-radius)*dockBlend;
       }
+      if(active&&!story.reading){
+       radius=Math.min(radius,Math.max(20,(storyFrame.bottom-storyFrame.top)/2-18));
+       keepInStory(point,radius+10,radius+12);
+      }
       const alpha=Math.max(0,1-Math.abs(gap)*.73)*readerFade*(1-blend);
       objects.push({point,size:radius,accent:layerIndex%2===1,blur:Math.min(6,Math.abs(gap)*5),
        lens:active,
@@ -461,6 +471,9 @@ function mountGlassScene(canvas) {
      const layerWeight=Math.exp(-Math.abs(layerIndex-visualDepth)*1.65);
      const maxRadius=Math.min(135,width*(wide?.11:.19),selected?viewportHeight*.14:Infinity);
      const radius=Math.min(maxRadius,Math.max(active?21:0,(.30+layerWeight*.17+highlight*.12)*point.scale));
+     if(active&&!story.reading&&storyFrame&&blend<.8){
+      keepInStory(point,Math.max(45,Math.min(86,width*.12),radius+8),radius+9,Math.max(72,radius+58));
+     }
      const blur=selected?0:defocus(point)*(.36+focusBlend*.58)+focusBlend*3;
      if(selected)selectedPoint=point;
      else if(node.kind==='document'&&node.ids.some(id=>selectedIds.has(id)))connected.push(point);
